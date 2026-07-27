@@ -161,12 +161,7 @@ class HackSayan:
 ## `$ tail -f /var/log/activity.log` — live stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=thehacksayan&show_icons=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=C9D1D9" height="165">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=thehacksayan&hide_border=true&background=0D1117&ring=00FF41&fire=00FF41&currStreakLabel=00FF41" height="165">
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=thehacksayan&layout=compact&hide_border=true&bg_color=0D1117&title_color=00FF41&text_color=C9D1D9">
 </p>
 
 <p align="center">
