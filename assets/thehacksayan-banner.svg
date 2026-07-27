@@ -1,0 +1,102 @@
+<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0118"/>
+      <stop offset="0.55" stop-color="#12052b"/>
+      <stop offset="1" stop-color="#050208"/>
+    </linearGradient>
+    <linearGradient id="glowText" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00ffa3"/>
+      <stop offset="1" stop-color="#37e6ff"/>
+    </linearGradient>
+    <radialGradient id="visor" cx="0.5" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#c8fff0"/>
+      <stop offset="0.45" stop-color="#22e0c0"/>
+      <stop offset="1" stop-color="#0a3d33"/>
+    </radialGradient>
+    <radialGradient id="haloGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff2ec4" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#ff2ec4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#2a2350" stroke-width="0.6" opacity="0.35"/>
+    </pattern>
+    <clipPath id="frame"><rect width="900" height="220" rx="14"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="900" height="220" fill="url(#bg)"/>
+    <rect width="900" height="220" fill="url(#grid)"/>
+
+    <!-- faint code rain, kept clear of the character -->
+    <g fill="#1fe6a8" opacity="0.16" font-family="Menlo, monospace" font-size="11">
+      <text x="36" y="24">01 10 01 fs</text>
+      <text x="36" y="204">root@grid ~$</text>
+      <text x="300" y="196">0x2A_0x1F_sudo./run</text>
+    </g>
+
+    <!-- ===== anime hacker bust, right side ===== -->
+    <g transform="translate(694,10)">
+      <circle cx="105" cy="105" r="100" fill="url(#haloGlow)"/>
+
+      <!-- shoulders / hoodie base -->
+      <path d="M15 200
+               C 15 150, 55 132, 105 132
+               C 155 132, 195 150, 195 200
+               L 195 205 L 15 205 Z"
+            fill="#170c30" stroke="#4a3a8a" stroke-width="1.5"/>
+      <!-- zip -->
+      <rect x="102" y="150" width="6" height="45" rx="3" fill="#0a3d33"/>
+      <circle cx="105" cy="196" r="5" fill="#00ffa3" opacity="0.8"/>
+
+      <!-- hood -->
+      <path d="M40 118
+               C 30 60, 62 20, 105 20
+               C 148 20, 180 60, 170 118
+               C 170 140, 150 150, 140 132
+               C 134 112, 122 100, 105 100
+               C 88 100, 76 112, 70 132
+               C 60 150, 40 140, 40 118 Z"
+            fill="#170c30" stroke="#4a3a8a" stroke-width="1.5"/>
+
+      <!-- spiky anime hair over hood -->
+      <path d="M62 34 L52 4 L74 26 Z" fill="#0f0824"/>
+      <path d="M105 22 L100 -10 L122 18 Z" fill="#0f0824"/>
+      <path d="M146 34 L160 6 L162 38 Z" fill="#0f0824"/>
+
+      <!-- face -->
+      <path d="M62 96 C 62 68, 80 52, 105 52 C 130 52, 148 68, 148 96
+               C 148 122, 132 140, 105 142 C 78 140, 62 122, 62 96 Z"
+            fill="#1a0f30"/>
+
+      <!-- glowing anime eyes -->
+      <path d="M73 92 C 82 83, 96 83, 105 92 C 96 101, 82 101, 73 92 Z" fill="url(#visor)" filter="url(#softGlow)"/>
+      <path d="M105 92 C 114 83, 128 83, 137 92 C 128 101, 114 101, 105 92 Z" fill="url(#visor)" filter="url(#softGlow)"/>
+
+      <!-- subtle mouth line -->
+      <path d="M95 118 Q105 124 115 118" stroke="#4a3a8a" stroke-width="2" fill="none" opacity="0.8"/>
+    </g>
+
+    <!-- ===== wordmark ===== -->
+    <g font-family="Fira Code, Menlo, monospace" font-weight="700">
+      <text x="42" y="94" font-size="44" letter-spacing="2" fill="url(#glowText)" filter="url(#softGlow)">HACK SAYAN</text>
+      <text x="44" y="94" font-size="44" letter-spacing="2" fill="#ff3ec9" opacity="0.16">HACK SAYAN</text>
+    </g>
+    <text x="44" y="122" font-family="Fira Code, Menlo, monospace" font-size="15" fill="#9df7e0" opacity="0.9" letter-spacing="1">
+      Cyber Security Engineer // Tool Builder // Content Creator
+    </text>
+    <text x="44" y="146" font-family="Fira Code, Menlo, monospace" font-size="13" fill="#5cf0d0" opacity="0.75" letter-spacing="1">
+      &gt; hacksayan.dev _
+    </text>
+
+    <!-- bottom accent bar -->
+    <rect x="0" y="215" width="900" height="5" fill="#00ffa3" opacity="0.65"/>
+  </g>
+</svg>

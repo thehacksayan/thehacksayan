@@ -1,5 +1,5 @@
 
-![Github Banner](https://github.com/thehacksayan/thehacksayan/blob/main/assets/thehacksayan.png)
+![Github Banner](https://raw.githubusercontent.com/thehacksayan/thehacksayan/main/assets/thehacksayan-banner.svg)
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&color=00FF41&background=00000000&center=true&vCenter=true&width=650&height=70&lines=Hello%2C+friend.;whoami+%3D+Sayan+Chatterjee;Cyber+Security+Engineer;Penetration+Tester+%7C+Tool+Builder;Content+Creator+%40HackSayan;Building+in+the+dark%2C+shipping+in+the+open." />
